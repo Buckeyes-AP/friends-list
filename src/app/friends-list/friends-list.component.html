@@ -1,0 +1,20 @@
+<div>
+    <table class="table table-sm">
+    <thead>
+        <tr>
+            <th [ngClass]="tblHdStyle">Id</th>
+            <th [ngClass]="tblHdStyle">Name</th>
+            <th [ngClass]="tblHdStyle">State</th>
+            <th [ngClass]="tblHdStyle">School</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of friends">
+            <td>{{ f.id }}</td>
+            <td>{{ f.name }}</td>
+            <td>{{ f.stateCode}}</td>
+            <td>{{ f.school }}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
